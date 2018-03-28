@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number_exercies;
+    int score;
+    int total;
+    int sum1=0;
+    int sum2=0;
+    cout <<"how many exercies; "<<"\n";
+    cin>>number_exercies;
+    for (int i=0;i<number_exercies;i++)
+    {
+      cout<<"Score received for exercise"<<i+1<<"\n";
+      cin>>score;
+      cout<<"Total points possible for exercise"<<i+1<<"\n";
+      cin>>total;
+      sum1+=score;
+      sum2+=total;
+
+    }
+    cout<<"Your total is"<<" "<<sum1<<" "<<"out of"<<" "<<sum2<<" "<<"or"<<" "<<float(sum1*100)/sum2<<"%";
+return 0;
+
+}
